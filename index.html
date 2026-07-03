@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardena Raiche | Data Analytics & Visualization Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #7dd3fc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid #334155;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: -0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        header h1 span {
+            color: var(--accent);
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--bg-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #334155;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .skill-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-tags {
+            margin: 0.5rem 0 1rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #334155;
+            color: var(--accent);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            font-weight: 600;
+        }
+
+        .project-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Ardena <span>Raiche</span></h1>
+            <p>Data Analytics & Visualization | Transforming Complex Datasets into Actionable Business Intelligence</p>
+            <a href="mailto:ardenaraiche@gmail.com" class="btn">Get In Touch</a>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am an IT and Data Analytics professional specializing in bridging the gap between deep technical predictive modeling and executive-level strategy. With a strong foundation in data pipelines, statistical evaluation, and cloud architecture, I focus on extracting meaningful patterns from complex structures to drive high-impact operational efficiency.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Toolbelt</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Data Science & Analytics</h3>
+                    <p>Python (Pandas, NumPy, Scikit-Learn), Predictive Modeling, Statistical Analysis, EDA.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Visualization & BI</h3>
+                    <p>Tableau, Power BI, Advanced Dashboard Design, Insights Delivery.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Engineering & Cloud</h3>
+                    <p>SQL (Query Optimization, Aggregations), AWS Cloud Ecosystem, Git/GitHub.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-list">
+                <!-- Project 1 Placeholder -->
+                <div class="project-card">
+                    <h3>Predictive Forecasting Model</h3>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-Learn</span>
+                        <span class="tag">Predictive Analytics</span>
+                    </div>
+                    <p>An end-to-end data analytics project using Python to ingest, clean, and build a machine learning model to forecast target business outcomes. Features heavy exploratory data analysis (EDA) and feature engineering.</p>
+                    <br>
+                    <a href="#" class="project-link">View Repository &rarr;</a>
+                </div>
+
+                <!-- Project 2 Placeholder -->
+                <div class="project-card">
+                    <h3>Interactive Business Intelligence Dashboard</h3>
+                    <div class="project-tags">
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Data Visualization</span>
+                    </div>
+                    <p>A strategic corporate dashboard designed to convert raw transactional data into intuitive, real-time tracking metrics for executive decision-makers.</p>
+                    <br>
+                    <a href="#" class="project-link">View Dashboard &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Ardena Raiche. Built with GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
