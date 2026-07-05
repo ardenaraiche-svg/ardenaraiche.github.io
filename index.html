@@ -1,227 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ardena Raiche | Data Analytics & Visualization Portfolio</title>
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --accent: #38bdf8;
-            --accent-hover: #7dd3fc;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <title>Ardena Raiche | Data Analytics & Visualization Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio of Ardena Raiche — Data Analytics & Visualization professional specializing in predictive modeling, business intelligence, and actionable insights."
+  />
+  <meta name="author" content="Ardena Raiche" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://ardenaraiche-svg.github.io/" />
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            padding: 2rem 1rem;
-        }
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ardena Raiche | Data Analytics & Visualization Portfolio" />
+  <meta property="og:description" content="Transforming complex datasets into actionable business intelligence." />
+  <meta property="og:url" content="https://ardenaraiche-svg.github.io/" />
+  <meta property="og:site_name" content="Ardena Raiche Portfolio" />
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ardena Raiche | Data Analytics & Visualization Portfolio" />
+  <meta name="twitter:description" content="Transforming complex datasets into actionable business intelligence." />
 
-        header {
-            text-align: center;
-            padding: 3rem 0;
-            border-bottom: 1px solid #334155;
-        }
+  <link rel="stylesheet" href="styles.css" />
 
-        header h1 {
-            font-size: 2.5rem;
-            letter-spacing: -0.05em;
-            margin-bottom: 0.5rem;
-        }
-
-        header h1 span {
-            color: var(--accent);
-        }
-
-        header p {
-            color: var(--text-muted);
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin: 0 auto 1.5rem;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--accent);
-            color: var(--bg-color);
-            padding: 0.75rem 1.5rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.2s ease;
-        }
-
-        .btn:hover {
-            background-color: var(--accent-hover);
-        }
-
-        section {
-            padding: 3rem 0;
-            border-bottom: 1px solid #334155;
-        }
-
-        section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--accent);
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .skill-card {
-            background-color: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid #334155;
-        }
-
-        .skill-card h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
-        }
-
-        .skill-card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        .projects-list {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .project-card {
-            background-color: var(--card-bg);
-            padding: 2rem;
-            border-radius: 8px;
-            border: 1px solid #334155;
-        }
-
-        .project-card h3 {
-            margin-bottom: 0.5rem;
-        }
-
-        .project-tags {
-            margin: 0.5rem 0 1rem;
-        }
-
-        .tag {
-            display: inline-block;
-            background: #334155;
-            color: var(--accent);
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-right: 0.5rem;
-            font-weight: 600;
-        }
-
-        .project-link {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .project-link:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-    </style>
+  <script>
+    (function () {
+      const saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") {
+        document.documentElement.setAttribute("data-theme", saved);
+      } else {
+        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.setAttribute("data-theme", prefersLight ? "light" : "dark");
+      }
+    })();
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="container">
-        <header>
-            <h1>Ardena <span>Raiche</span></h1>
-            <p>Data Analytics & Visualization | Transforming Complex Datasets into Actionable Business Intelligence</p>
-            <a href="mailto:ardenaraiche@gmail.com" class="btn">Get In Touch</a>
-        </header>
+  <div class="container">
+    <header class="site-header" id="top">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Ardena <span>Raiche</span></h1>
+      <p class="lede">
+        Data Analytics &amp; Visualization | Transforming Complex Datasets into Actionable Business Intelligence
+      </p>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am an IT and Data Analytics professional specializing in bridging the gap between deep technical predictive modeling and executive-level strategy. With a strong foundation in data pipelines, statistical evaluation, and cloud architecture, I focus on extracting meaningful patterns from complex structures to drive high-impact operational efficiency.</p>
-        </section>
+      <div class="header-actions">
+        <a href="mailto:ardenaraiche@gmail.com" class="btn">Get In Touch</a>
+        <a
+          href="https://github.com/ardenaraiche-svg"
+          class="btn btn-secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub Profile
+        </a>
+      </div>
+    </header>
 
-        <section id="skills">
-            <h2>Technical Toolbelt</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Data Science & Analytics</h3>
-                    <p>Python (Pandas, NumPy, Scikit-Learn), Predictive Modeling, Statistical Analysis, EDA.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Data Visualization & BI</h3>
-                    <p>Tableau, Power BI, Advanced Dashboard Design, Insights Delivery.</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Data Engineering & Cloud</h3>
-                    <p>SQL (Query Optimization, Aggregations), AWS Cloud Ecosystem, Git/GitHub.</p>
-                </div>
+    <nav class="sticky-nav" aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Toggle color theme"
+        aria-pressed="false"
+      >
+        <span class="theme-toggle-text">Toggle theme</span>
+      </button>
+    </nav>
+
+    <main id="main-content">
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About Me</h2>
+        <p>
+          I am an IT and Data Analytics professional specializing in bridging the gap between
+          deep technical predictive modeling and executive-level strategy. With a strong foundation
+          in data pipelines, analytics workflows, and stakeholder communication, I translate complex
+          data into clear, business-focused recommendations.
+        </p>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical Toolbelt</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Data Science &amp; Analytics</h3>
+            <p>Python (Pandas, NumPy, Scikit-Learn), Predictive Modeling, Statistical Analysis, EDA.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Data Visualization &amp; BI</h3>
+            <p>Tableau, Power BI, Advanced Dashboard Design, Insights Delivery.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Data Engineering &amp; Cloud</h3>
+            <p>SQL (Query Optimization, Aggregations), AWS Cloud Ecosystem, Git/GitHub.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Featured Projects</h2>
+        <div class="projects-list">
+          <article class="project-card">
+            <h3>Predictive Forecasting Model</h3>
+            <div class="project-tags" aria-label="Project tags">
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-Learn</span>
+              <span class="tag">Predictive Analytics</span>
             </div>
-        </section>
+            <p>
+              End-to-end analytics workflow to ingest, clean, and model data for forecasting
+              business outcomes. Includes exploratory analysis, feature engineering, model evaluation,
+              and presentation-ready insights.
+            </p>
+            <a
+              href="https://github.com/ardenaraiche-svg"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View repository for Predictive Forecasting Model"
+            >
+              View Repository &rarr;
+            </a>
+          </article>
 
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="projects-list">
-                <!-- Project 1 Placeholder -->
-                <div class="project-card">
-                    <h3>Predictive Forecasting Model</h3>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Scikit-Learn</span>
-                        <span class="tag">Predictive Analytics</span>
-                    </div>
-                    <p>An end-to-end data analytics project using Python to ingest, clean, and build a machine learning model to forecast target business outcomes. Features heavy exploratory data analysis (EDA) and feature engineering.</p>
-                    <br>
-                    <a href="#" class="project-link">View Repository &rarr;</a>
-                </div>
-
-                <!-- Project 2 Placeholder -->
-                <div class="project-card">
-                    <h3>Interactive Business Intelligence Dashboard</h3>
-                    <div class="project-tags">
-                        <span class="tag">Tableau</span>
-                        <span class="tag">Power BI</span>
-                        <span class="tag">Data Visualization</span>
-                    </div>
-                    <p>A strategic corporate dashboard designed to convert raw transactional data into intuitive, real-time tracking metrics for executive decision-makers.</p>
-                    <br>
-                    <a href="#" class="project-link">View Dashboard &rarr;</a>
-                </div>
+          <article class="project-card">
+            <h3>Interactive Business Intelligence Dashboard</h3>
+            <div class="project-tags" aria-label="Project tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">Power BI</span>
+              <span class="tag">Data Visualization</span>
             </div>
-        </section>
+            <p>
+              Strategic dashboard that converts transactional data into intuitive, real-time KPI views
+              for executive decision-making and performance tracking.
+            </p>
+            <a
+              href="https://github.com/ardenaraiche-svg"
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View dashboard project details"
+            >
+              View Dashboard &rarr;
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
 
-        <footer>
-            <p>&copy; 2026 Ardena Raiche. Built with GitHub Pages.</p>
-        </footer>
-    </div>
+    <footer>
+      <p>&copy; 2026 Ardena Raiche. Built with GitHub Pages.</p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+  </div>
 
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.getElementById("theme-toggle");
+      const metaTheme = document.querySelector('meta[name="theme-color"]');
+
+      function applyTheme(theme) {
+        root.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+        const isLight = theme === "light";
+        toggle.setAttribute("aria-pressed", String(isLight));
+        toggle.querySelector(".theme-toggle-text").textContent = isLight ? "Light mode" : "Dark mode";
+        if (metaTheme) metaTheme.setAttribute("content", isLight ? "#f8fafc" : "#0f172a");
+      }
+
+      toggle.addEventListener("click", function () {
+        const current = root.getAttribute("data-theme") || "dark";
+        applyTheme(current === "dark" ? "light" : "dark");
+      });
+
+      applyTheme(root.getAttribute("data-theme") || "dark");
+    })();
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ardena Raiche",
+      "url": "https://ardenaraiche-svg.github.io/",
+      "sameAs": ["https://github.com/ardenaraiche-svg"],
+      "jobTitle": "Data Analytics & Visualization Professional"
+    }
+  </script>
 </body>
 </html>
