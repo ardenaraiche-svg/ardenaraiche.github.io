@@ -27,18 +27,6 @@
   <meta name="twitter:description" content="Transforming complex datasets into actionable business intelligence." />
 
   <link rel="stylesheet" href="styles.css" />
-
-  <script>
-    (function () {
-      const saved = localStorage.getItem("theme");
-      if (saved === "light" || saved === "dark") {
-        document.documentElement.setAttribute("data-theme", saved);
-      } else {
-        const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
-        document.documentElement.setAttribute("data-theme", prefersLight ? "light" : "dark");
-      }
-    })();
-  </script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -167,32 +155,9 @@
     </footer>
   </div>
 
-  <script>
-    (function () {
-      const root = document.documentElement;
-      const toggle = document.getElementById("theme-toggle");
-      const metaTheme = document.querySelector('meta[name="theme-color"]');
-
-      function applyTheme(theme) {
-        root.setAttribute("data-theme", theme);
-        localStorage.setItem("theme", theme);
-        const isLight = theme === "light";
-        toggle.setAttribute("aria-pressed", String(isLight));
-        toggle.querySelector(".theme-toggle-text").textContent = isLight ? "Light mode" : "Dark mode";
-        if (metaTheme) metaTheme.setAttribute("content", isLight ? "#f8fafc" : "#0f172a");
-      }
-
-      toggle.addEventListener("click", function () {
-        const current = root.getAttribute("data-theme") || "dark";
-        applyTheme(current === "dark" ? "light" : "dark");
-      });
-
-      applyTheme(root.getAttribute("data-theme") || "dark");
-    })();
-  </script>
+  <script src="script.js" defer></script>
 
   <script type="application/ld+json">
-    <script src="script.js" defer></script>
     {
       "@context": "https://schema.org",
       "@type": "Person",
